@@ -3,7 +3,7 @@
   "category": "misc",
   "cookingtime": 200,
   "experience": 2,
-  "group": "titanium_ingot",
+  "group": "copper_ingot",
   "ingredient": {
     "item": "atomic_eulogy:raw_titanium"
   },
