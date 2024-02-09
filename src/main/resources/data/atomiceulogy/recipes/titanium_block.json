@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "atomiceulogy:titanium_ingot"
+    }
+  },
+  "result": {
+    "item": "atomiceulogy:titanium_block"
+  }
+}

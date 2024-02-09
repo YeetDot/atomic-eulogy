@@ -3,5 +3,8 @@
   "item.atomiceulogy.raw_titanium": "Raw Titanium",
   "item.atomiceulogy.titanium_nugget": "Titanium Nugget",
 
+  "block.atomiceulogy.titanium_block": "Block of Titanium",
+  "block.atomiceulogy.raw_titanium_block": "Block of Raw Titanium",
+
   "itemgroup.moditems": "Atomic Eulogy"
 }

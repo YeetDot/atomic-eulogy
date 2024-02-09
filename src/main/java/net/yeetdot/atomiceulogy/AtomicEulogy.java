@@ -2,6 +2,7 @@ package net.yeetdot.atomiceulogy;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.yeetdot.atomiceulogy.block.ModBlocks;
 import net.yeetdot.atomiceulogy.item.ModItemGroups;
 import net.yeetdot.atomiceulogy.item.ModItems;
 import org.slf4j.Logger;
@@ -15,6 +16,7 @@ public class AtomicEulogy implements ModInitializer {
 	public void onInitialize() {
 		ModItems.registerModItems();
 		ModItemGroups.registerItemGroups();
+		ModBlocks.registerModBlocks();
 		LOGGER.info("Hello Fabric world!");
 	}
 }
