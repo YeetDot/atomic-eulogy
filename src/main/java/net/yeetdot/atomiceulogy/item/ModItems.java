@@ -11,11 +11,12 @@ import net.minecraft.util.Identifier;
 import net.yeetdot.atomiceulogy.AtomicEulogy;
 
 public class ModItems {
-    public static final Item TITANIUM = registerItem("titanium", new Item(new FabricItemSettings()));
+    public static final Item TITANIUM_INGOT = registerItem("titanium_ingot", new Item(new FabricItemSettings()));
 
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {
-        entries.add(TITANIUM);
+        entries.add(TITANIUM_INGOT);
     }
+
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(AtomicEulogy.MOD_ID, name), item);
