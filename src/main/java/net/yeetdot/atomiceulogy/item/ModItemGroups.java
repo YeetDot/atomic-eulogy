@@ -16,6 +16,7 @@ public class ModItemGroups {
             .icon(() -> new ItemStack(ModItems.TITANIUM_INGOT)).entries((displayContext, entries) -> {
                 entries.add(ModItems.TITANIUM_INGOT);
                 entries.add(ModItems.RAW_TITANIUM);
+                entries.add(ModItems.TITANIUM_NUGGET);
             }).build());
 
     public static void registerItemGroups() {
