@@ -12,6 +12,7 @@ import net.yeetdot.atomiceulogy.AtomicEulogy;
 
 public class ModItems {
     public static final Item TITANIUM_INGOT = registerItem("titanium_ingot", new Item(new FabricItemSettings()));
+    public static final Item RAW_TITANIUM = registerItem("raw_titanium", new Item(new FabricItemSettings()));
 
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {
         entries.add(TITANIUM_INGOT);
