@@ -22,6 +22,9 @@ public class ModItemGroups {
                 //Block Items
                 entries.add(ModBlocks.TITANIUM_BLOCK);
                 entries.add(ModBlocks.RAW_TITANIUM_BLOCK);
+                entries.add(ModBlocks.TITANIUM_ORE);
+                entries.add(ModBlocks.DEEPSLATE_TITANIUM_ORE);
+
             }).build());
 
     public static void registerItemGroups() {
