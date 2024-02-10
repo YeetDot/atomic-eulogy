@@ -19,6 +19,7 @@ public class ModItemGroups {
                 entries.add(ModItems.TITANIUM_INGOT);
                 entries.add(ModItems.RAW_TITANIUM);
                 entries.add(ModItems.TITANIUM_NUGGET);
+                entries.add(ModItems.RADIANCE_ROD);
                 //Block Items
                 entries.add(ModBlocks.TITANIUM_BLOCK);
                 entries.add(ModBlocks.RAW_TITANIUM_BLOCK);

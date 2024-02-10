@@ -24,9 +24,9 @@ public class ModBlocks {
             new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).strength(7.0F,6.0F).mapColor(MapColor.DEEPSLATE_GRAY)));
 
     public static final Block TITANIUM_ORE = registerBlock("titanium_ore",
-            new ExperienceDroppingBlock(ConstantIntProvider.create(1), FabricBlockSettings.copyOf(Blocks.IRON_ORE)));
+            new ExperienceDroppingBlock(ConstantIntProvider.create(0), FabricBlockSettings.copyOf(Blocks.IRON_ORE)));
     public static final Block DEEPSLATE_TITANIUM_ORE = registerBlock("deepslate_titanium_ore",
-            new ExperienceDroppingBlock(ConstantIntProvider.create(1), FabricBlockSettings.copyOf(Blocks.DEEPSLATE_IRON_ORE)));
+            new ExperienceDroppingBlock(ConstantIntProvider.create(0), FabricBlockSettings.copyOf(Blocks.DEEPSLATE_IRON_ORE)));
 
     private static void addItemsToBuildingBlockGroup(FabricItemGroupEntries entries) {
         entries.add(TITANIUM_BLOCK);
