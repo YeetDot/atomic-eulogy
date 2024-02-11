@@ -16,5 +16,9 @@
   "block.atomiceulogy.titanium_ore": "Titanium Ore",
   "block.atomiceulogy.deepslate_titanium_ore": "Deepslate Titanium Ore",
 
+  "death.attack.poisonous_block": "%1$s died from to a poisonous block",
+
+  "death.attack.ate_titanium": "%1$s ate some titanium",
+
   "itemgroup.moditems": "Atomic Eulogy"
 }

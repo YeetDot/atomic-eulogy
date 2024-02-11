@@ -16,12 +16,16 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.ConstantIntProvider;
 import net.yeetdot.atomiceulogy.AtomicEulogy;
+import net.yeetdot.atomiceulogy.block.custom.PoisonousBlock;
 
 public class ModBlocks {
     public static final Block TITANIUM_BLOCK = registerBlock("titanium_block",
             new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).strength(7.0F,6.0F).mapColor(MapColor.GRAY)));
     public static final Block RAW_TITANIUM_BLOCK = registerBlock("raw_titanium_block",
             new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).strength(7.0F,6.0F).mapColor(MapColor.DEEPSLATE_GRAY)));
+
+    public static final Block POISONOUS_BLOCK = registerBlock("poisonous_block",
+            new PoisonousBlock(FabricBlockSettings.copyOf(Blocks.MAGMA_BLOCK).mapColor(MapColor.LICHEN_GREEN)));
 
     public static final Block TITANIUM_ORE = registerBlock("titanium_ore",
             new ExperienceDroppingBlock(ConstantIntProvider.create(0), FabricBlockSettings.copyOf(Blocks.IRON_ORE)));
