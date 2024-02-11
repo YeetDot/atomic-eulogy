@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "atomiceulogy:titanium_block",
+    "atomiceulogy:raw_titanium_block",
+    "atomiceulogy:titanium_ore",
+    "atomiceulogy:deepslate_titanium_ore"
+  ]
+}

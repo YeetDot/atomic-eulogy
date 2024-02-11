@@ -1,0 +1,13 @@
+{
+  "item.atomiceulogy.titanium_ingot": "Titanium Ingot",
+  "item.atomiceulogy.raw_titanium": "Raw Titanium",
+  "item.atomiceulogy.titanium_nugget": "Titanium Nugget",
+  "item.atomiceulogy.radiance_rod": "Rod of Radiance",
+
+  "block.atomiceulogy.titanium_block": "Block of Titanium",
+  "block.atomiceulogy.raw_titanium_block": "Block of Raw Titanium",
+  "block.atomiceulogy.titanium_ore": "Titanium Ore",
+  "block.atomiceulogy.deepslate_titanium_ore": "Deepslate Titanium Ore",
+
+  "itemgroup.moditems": "Atomic Eulogy"
+}

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "atomiceulogy:titanium_block"
+    }
+  ],
+  "result": {
+    "item": "atomiceulogy:titanium_ingot",
+    "count": 9
+  }
+}
