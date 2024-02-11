@@ -17,6 +17,8 @@ public class AtomicEulogy implements ModInitializer {
 		ModItems.registerModItems();
 		ModItemGroups.registerItemGroups();
 		ModBlocks.registerModBlocks();
+
+
 		LOGGER.info("Hello Fabric world!");
 	}
 }
