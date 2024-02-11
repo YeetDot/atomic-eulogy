@@ -4,6 +4,13 @@
   "item.atomiceulogy.titanium_nugget": "Titanium Nugget",
   "item.atomiceulogy.radiance_rod": "Rod of Radiance",
 
+  "item.atomiceulogy.metal_detector": "Metal Detector",
+  "item.atomiceulogy.metal_detector.tooltip_line_1": "§8Durability taken equals the",
+  "item.atomiceulogy.metal_detector.tooltip_line_2": "§8distance from usage to the",
+  "item.atomiceulogy.metal_detector.tooltip_line_3": "§8position of the block detected",
+  "item.atomiceulogy.metal_detector.tooltip_line_4": "",
+  "item.atomiceulogy.metal_detector.tooltip_line_5": "§8If nothing detected, takes 128 damage",
+
   "block.atomiceulogy.titanium_block": "Block of Titanium",
   "block.atomiceulogy.raw_titanium_block": "Block of Raw Titanium",
   "block.atomiceulogy.titanium_ore": "Titanium Ore",
