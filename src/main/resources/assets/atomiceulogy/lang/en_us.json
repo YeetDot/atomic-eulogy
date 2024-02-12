@@ -6,6 +6,7 @@
 
   "item.atomiceulogy.metal_detector_level_1": "Basic Metal Detector",
   "item.atomiceulogy.metal_detector_level_1.tooltip_line_1": "§8Detects mediocre ores",
+  "item.atomiceulogy.titanium_nugget.tooltip": "§8Contains 501kg of titanium. Lethal if ingested.",
 
   "block.atomiceulogy.titanium_block": "Block of Titanium",
   "block.atomiceulogy.raw_titanium_block": "Block of Raw Titanium",
