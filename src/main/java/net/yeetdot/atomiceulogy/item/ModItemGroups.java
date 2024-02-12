@@ -20,7 +20,7 @@ public class ModItemGroups {
                 entries.add(ModItems.RAW_TITANIUM);
                 entries.add(ModItems.TITANIUM_NUGGET);
                 entries.add(ModItems.RADIANCE_ROD);
-                entries.add(ModItems.METAL_DETECTOR);
+                entries.add(ModItems.METAL_DETECTOR_LEVEL_1);
                 //Block Items
                 entries.add(ModBlocks.TITANIUM_BLOCK);
                 entries.add(ModBlocks.RAW_TITANIUM_BLOCK);

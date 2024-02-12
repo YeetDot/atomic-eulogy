@@ -25,7 +25,7 @@ public class ModBlocks {
             new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).strength(7.0F,6.0F).mapColor(MapColor.DEEPSLATE_GRAY)));
 
     public static final Block POISONOUS_BLOCK = registerBlock("poisonous_block",
-            new PoisonousBlock(FabricBlockSettings.copyOf(Blocks.MAGMA_BLOCK).mapColor(MapColor.LICHEN_GREEN)));
+            new PoisonousBlock(FabricBlockSettings.create().mapColor(MapColor.LICHEN_GREEN).strength(0.5f)));
 
     public static final Block TITANIUM_ORE = registerBlock("titanium_ore",
             new ExperienceDroppingBlock(ConstantIntProvider.create(0), FabricBlockSettings.copyOf(Blocks.IRON_ORE)));

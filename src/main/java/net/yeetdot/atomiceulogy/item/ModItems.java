@@ -1,5 +1,6 @@
 package net.yeetdot.atomiceulogy.item;
 
+import net.fabricmc.fabric.api.item.v1.EquipmentSlotProvider;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
@@ -10,7 +11,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
 import net.yeetdot.atomiceulogy.AtomicEulogy;
-import net.yeetdot.atomiceulogy.item.custom.MetalDetectorItem;
+import net.yeetdot.atomiceulogy.item.custom.MetalDetectorItemLevel1;
 import net.yeetdot.atomiceulogy.item.custom.TitaniumNuggetItem;
 
 public class ModItems {
@@ -19,7 +20,7 @@ public class ModItems {
     public static final Item TITANIUM_NUGGET = registerItem("titanium_nugget", new TitaniumNuggetItem(new FabricItemSettings().food(ModFoodComponents.TITANIUM_NUGGET)));
     public static final Item RADIANCE_ROD = registerItem("radiance_rod", new Item(new FabricItemSettings().maxCount(1).rarity(Rarity.EPIC)));
 
-    public static final Item METAL_DETECTOR = registerItem("metal_detector", new MetalDetectorItem(new FabricItemSettings().maxDamage(16384)));
+    public static final Item METAL_DETECTOR_LEVEL_1 = registerItem("metal_detector_level_1", new MetalDetectorItemLevel1(new FabricItemSettings().maxDamage(16384)));
 
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {
         entries.add(TITANIUM_INGOT);
