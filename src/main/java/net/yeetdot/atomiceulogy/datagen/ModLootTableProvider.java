@@ -15,6 +15,10 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.TITANIUM_BLOCK);
         addDrop(ModBlocks.RAW_TITANIUM_BLOCK);
         addDrop(ModBlocks.POISONOUS_BLOCK);
+        addDrop(ModBlocks.TITANIUM_TRAPDOOR);
+        addDrop(ModBlocks.TITANIUM_BUTTON);
+
+        addDrop(ModBlocks.TITANIUM_DOOR, doorDrops(ModBlocks.TITANIUM_DOOR));
 
         addDrop(ModBlocks.TITANIUM_ORE, oreDrops(ModBlocks.TITANIUM_ORE, ModItems.RAW_TITANIUM));
         addDrop(ModBlocks.DEEPSLATE_TITANIUM_ORE, oreDrops(ModBlocks.DEEPSLATE_TITANIUM_ORE, ModItems.RAW_TITANIUM));

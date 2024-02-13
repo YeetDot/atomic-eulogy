@@ -27,6 +27,10 @@ public class ModItemGroups {
                 entries.add(ModBlocks.TITANIUM_ORE);
                 entries.add(ModBlocks.DEEPSLATE_TITANIUM_ORE);
                 entries.add(ModBlocks.POISONOUS_BLOCK);
+                entries.add(ModBlocks.TITANIUM_BUTTON);
+                entries.add(ModBlocks.TITANIUM_DOOR);
+                entries.add(ModBlocks.TITANIUM_TRAPDOOR);
+                entries.add(ModBlocks.LANDMINE);
 
             }).build());
 

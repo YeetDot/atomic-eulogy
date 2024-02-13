@@ -8,6 +8,7 @@ import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
+import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.util.Identifier;
 import net.yeetdot.atomiceulogy.block.ModBlocks;
@@ -46,10 +47,20 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .pattern("###")
                 .pattern("###")
                 .input('#', ModItems.TITANIUM_NUGGET)
-                .criterion(hasItem(Items.AIR), conditionsFromItem(Items.AIR))
+                .criterion(hasItem(ModItems.TITANIUM_INGOT), conditionsFromItem(ModItems.TITANIUM_INGOT))
                 .offerTo(exporter, new Identifier("titanium_ingot_from_titanium_nugget"));
 
         offerShapelessRecipe(exporter, ModItems.TITANIUM_NUGGET, ModItems.TITANIUM_INGOT, "titanium_ingot", 9);
+
+
+
+        createDoorRecipe(ModBlocks.TITANIUM_DOOR, Ingredient.ofItems(ModItems.TITANIUM_INGOT))
+                .criterion(hasItem(ModItems.TITANIUM_INGOT), conditionsFromItem(ModItems.TITANIUM_INGOT))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.TITANIUM_DOOR)));
+
+        createTrapdoorRecipe(ModBlocks.TITANIUM_TRAPDOOR, Ingredient.ofItems(ModItems.TITANIUM_INGOT))
+                .criterion(hasItem(ModItems.TITANIUM_INGOT), conditionsFromItem(ModItems.TITANIUM_INGOT))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.TITANIUM_TRAPDOOR)));
     }
 
 }

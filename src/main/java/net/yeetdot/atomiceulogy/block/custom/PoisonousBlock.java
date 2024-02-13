@@ -25,6 +25,7 @@ public class PoisonousBlock extends Block {
                     livingEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.POISON, 60));
                 }
                 livingEntity.damage(ModDamageTypes.of(world, ModDamageTypes.POISONOUS_BLOCK_DAMAGE_TYPE), 1.0f);
+
             }
 
         }

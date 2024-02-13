@@ -9,9 +9,14 @@
   "item.atomiceulogy.titanium_nugget.tooltip": "§8Contains 501kg of titanium. Lethal if ingested.",
 
   "block.atomiceulogy.titanium_block": "Block of Titanium",
+  "block.atomiceulogy.poisonous_block": "Block of Poisonous Materials",
+  "block.atomiceulogy.landmine": "Landmine",
   "block.atomiceulogy.raw_titanium_block": "Block of Raw Titanium",
   "block.atomiceulogy.titanium_ore": "Titanium Ore",
   "block.atomiceulogy.deepslate_titanium_ore": "Deepslate Titanium Ore",
+  "block.atomiceulogy.titanium_door": "Titanium Door",
+  "block.atomiceulogy.titanium_trapdoor": "Titanium Trapdoor",
+  "block.atomiceulogy.titanium_button": "Titanium Button",
 
   "death.attack.poisonous_block": "%1$s died from to a poisonous block",
 
