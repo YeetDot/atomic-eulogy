@@ -11,6 +11,9 @@ import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.util.shape.VoxelShapes;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
+import net.minecraft.world.tick.Tick;
+
+import java.sql.Time;
 
 public class LandmineBlock extends Block {
     public LandmineBlock(Settings settings) {
@@ -24,22 +27,22 @@ public class LandmineBlock extends Block {
 
     @Override
     public void onSteppedOn(World world, BlockPos pos, BlockState state, Entity entity) {
+        world.removeBlock(pos, false);
         explode(world, entity, pos, 10f);
-        super.onSteppedOn(world, pos, state, entity);
     }
 
     @Override
     public void onEntityCollision(BlockState state, World world, BlockPos pos, Entity entity) {
+        world.removeBlock(pos, false);
         explode(world, entity, pos, 10f);
-        super.onEntityCollision(state, world, pos, entity);
     }
 
     @Override
     public void onBlockAdded(BlockState state, World world, BlockPos pos, BlockState oldState, boolean notify) {
         if (!oldState.isOf(state.getBlock())) {
             if (world.isReceivingRedstonePower(pos)) {
-                explode(world,  null, pos, 100f);
                 world.removeBlock(pos, false);
+                explode(world, null, pos, 100f);
             }
 
         }
@@ -48,20 +51,18 @@ public class LandmineBlock extends Block {
     @Override
     public void neighborUpdate(BlockState state, World world, BlockPos pos, Block sourceBlock, BlockPos sourcePos, boolean notify) {
         if (world.isReceivingRedstonePower(pos)) {
-            explode(world,  null, pos, 100f);
             world.removeBlock(pos, false);
+            explode(world,  null, pos, 100f);
         }
 
     }
 
     public BlockState onBreak(World world, BlockPos pos, BlockState state, PlayerEntity player) {
-        if (!world.isClient()) {
-            explode(world, player, pos, 1f);
-        }
-
+        explode(world, player, pos, 4f);
         return super.onBreak(world, pos, state, player);
     }
+
     private static void explode(World world, Entity entity, BlockPos pos, float power){
-        world.createExplosion(entity, pos.getX(), pos.getY() + 0.5, pos.getZ(), power, World.ExplosionSourceType.BLOCK);
+        if(!world.isClient) world.createExplosion(entity, pos.getX(), pos.getY(), pos.getZ(), power, World.ExplosionSourceType.BLOCK);
     }
 }
