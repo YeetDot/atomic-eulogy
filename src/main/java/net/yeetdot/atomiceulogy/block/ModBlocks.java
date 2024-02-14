@@ -25,7 +25,7 @@ public class ModBlocks {
     public static final Block POISONOUS_BLOCK = registerBlock("poisonous_block",
             new PoisonousBlock(FabricBlockSettings.create().mapColor(MapColor.LICHEN_GREEN).strength(0.5f)));
     public static final Block LANDMINE = registerBlock("landmine",
-            new LandmineBlock(FabricBlockSettings.create().mapColor(MapColor.LICHEN_GREEN).strength(0).breakInstantly()));
+            new LandmineBlock(FabricBlockSettings.create().mapColor(MapColor.LICHEN_GREEN).strength(0).breakInstantly().noCollision().solid()));
 
     public static final Block TITANIUM_ORE = registerBlock("titanium_ore",
             new ExperienceDroppingBlock(ConstantIntProvider.create(0), FabricBlockSettings.copyOf(Blocks.IRON_ORE)));
