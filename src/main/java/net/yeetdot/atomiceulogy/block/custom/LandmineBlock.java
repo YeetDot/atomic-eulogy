@@ -2,14 +2,24 @@ package net.yeetdot.atomiceulogy.block.custom;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
+import net.minecraft.block.ShapeContext;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.util.function.BooleanBiFunction;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.shape.VoxelShape;
+import net.minecraft.util.shape.VoxelShapes;
+import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
 
 public class LandmineBlock extends Block {
     public LandmineBlock(Settings settings) {
         super(settings);
+    }
+
+    @Override
+    public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
+        return VoxelShapes.combineAndSimplify(Block.createCuboidShape(1, 0, 1, 15, 1, 15), Block.createCuboidShape(7, 0.2, 7, 9, 1.2, 9), BooleanBiFunction.OR);
     }
 
     @Override
