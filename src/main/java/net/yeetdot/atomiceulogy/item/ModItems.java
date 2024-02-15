@@ -1,12 +1,10 @@
 package net.yeetdot.atomiceulogy.item;
 
-import net.fabricmc.fabric.api.item.v1.EquipmentSlotProvider;
+import net.minecraft.item.Items;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroups;
-import net.minecraft.item.Items;
+import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
@@ -22,6 +20,12 @@ public class ModItems {
     public static final Item RADIANCE_ROD = registerItem("radiance_rod", new Item(new FabricItemSettings().maxCount(1).rarity(Rarity.EPIC)));
 
     public static final Item METAL_DETECTOR_LEVEL_1 = registerItem("metal_detector_level_1", new MetalDetectorItemLevel1(new FabricItemSettings().maxDamage(16384)));
+
+    public static final Item TITANIUM_PICKAXE = registerItem("titanium_pickaxe", new PickaxeItem(ModToolMaterial.TITANIUM, 1, -2.8f, new FabricItemSettings().maxDamage(8)));
+    public static final Item TITANIUM_SHOVEL = registerItem("titanium_shovel", new ShovelItem(ModToolMaterial.TITANIUM, 1.5f, -3, new FabricItemSettings().maxDamage(8)));
+    public static final Item TITANIUM_AXE = registerItem("titanium_axe", new AxeItem(ModToolMaterial.TITANIUM, 6, -3.1f, new FabricItemSettings().maxDamage(8)));
+    public static final Item TITANIUM_HOE = registerItem("titanium_hoe", new HoeItem(ModToolMaterial.TITANIUM, 0, -1, new FabricItemSettings().maxDamage(8)));
+    public static final Item TITANIUM_SWORD = registerItem("titanium_sword", new SwordItem(ModToolMaterial.TITANIUM, 3, -2.4f, new FabricItemSettings().maxDamage(8)));
 
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {
         entries.add(TITANIUM_INGOT);

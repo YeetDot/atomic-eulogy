@@ -21,6 +21,11 @@ public class ModItemGroups {
                 entries.add(ModItems.TITANIUM_NUGGET);
                 entries.add(ModItems.RADIANCE_ROD);
                 entries.add(ModItems.METAL_DETECTOR_LEVEL_1);
+                entries.add(ModItems.TITANIUM_PICKAXE);
+                entries.add(ModItems.TITANIUM_AXE);
+                entries.add(ModItems.TITANIUM_SHOVEL);
+                entries.add(ModItems.TITANIUM_HOE);
+                entries.add(ModItems.TITANIUM_SWORD);
                 //Block Items
                 entries.add(ModBlocks.TITANIUM_BLOCK);
                 entries.add(ModBlocks.RAW_TITANIUM_BLOCK);

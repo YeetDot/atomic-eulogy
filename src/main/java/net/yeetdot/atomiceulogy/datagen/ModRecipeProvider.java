@@ -61,6 +61,71 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         createTrapdoorRecipe(ModBlocks.TITANIUM_TRAPDOOR, Ingredient.ofItems(ModItems.TITANIUM_INGOT))
                 .criterion(hasItem(ModItems.TITANIUM_INGOT), conditionsFromItem(ModItems.TITANIUM_INGOT))
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.TITANIUM_TRAPDOOR)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.TITANIUM_PICKAXE, 1)
+                .pattern("TTT")
+                .pattern(" / ")
+                .pattern(" / ")
+                .input('T', ModItems.TITANIUM_INGOT)
+                .input('/', Items.STICK)
+                .criterion(hasItem(ModItems.TITANIUM_INGOT), conditionsFromItem(ModItems.TITANIUM_INGOT))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.TITANIUM_PICKAXE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.TITANIUM_SHOVEL, 1)
+                .pattern("T")
+                .pattern("/")
+                .pattern("/")
+                .input('T', ModItems.TITANIUM_INGOT)
+                .input('/', Items.STICK)
+                .criterion(hasItem(ModItems.TITANIUM_INGOT), conditionsFromItem(ModItems.TITANIUM_INGOT))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.TITANIUM_SHOVEL)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.TITANIUM_HOE, 1)
+                .pattern("TT")
+                .pattern(" /")
+                .pattern(" /")
+                .input('T', ModItems.TITANIUM_INGOT)
+                .input('/', Items.STICK)
+                .criterion(hasItem(ModItems.TITANIUM_INGOT), conditionsFromItem(ModItems.TITANIUM_INGOT))
+                .offerTo(exporter, new Identifier("titanium_hoe_left"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.TITANIUM_HOE, 1)
+                .pattern("TT")
+                .pattern("/ ")
+                .pattern("/ ")
+                .input('T', ModItems.TITANIUM_INGOT)
+                .input('/', Items.STICK)
+                .criterion(hasItem(ModItems.TITANIUM_INGOT), conditionsFromItem(ModItems.TITANIUM_INGOT))
+                .offerTo(exporter, new Identifier("titanium_hoe_right"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.TITANIUM_AXE, 1)
+                .pattern("TT")
+                .pattern("T/")
+                .pattern(" /")
+                .input('T', ModItems.TITANIUM_INGOT)
+                .input('/', Items.STICK)
+                .criterion(hasItem(ModItems.TITANIUM_INGOT), conditionsFromItem(ModItems.TITANIUM_INGOT))
+                .offerTo(exporter, new Identifier("titanium_axe_left"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.TITANIUM_AXE, 1)
+                .pattern("TT")
+                .pattern("/T")
+                .pattern("/ ")
+                .input('T', ModItems.TITANIUM_INGOT)
+                .input('/', Items.STICK)
+                .criterion(hasItem(ModItems.TITANIUM_INGOT), conditionsFromItem(ModItems.TITANIUM_INGOT))
+                .offerTo(exporter, new Identifier("titanium_axe_right"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.TITANIUM_SWORD, 1)
+                .pattern("T")
+                .pattern("T")
+                .pattern("/")
+                .input('T', ModItems.TITANIUM_INGOT)
+                .input('/', Items.STICK)
+                .criterion(hasItem(ModItems.TITANIUM_INGOT), conditionsFromItem(ModItems.TITANIUM_INGOT))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.TITANIUM_SWORD)));
+
+
     }
 
 }
