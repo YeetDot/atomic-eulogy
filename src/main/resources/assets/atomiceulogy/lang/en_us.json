@@ -3,6 +3,12 @@
   "item.atomiceulogy.raw_titanium": "Raw Titanium",
   "item.atomiceulogy.titanium_nugget": "Titanium Nugget",
   "item.atomiceulogy.radiance_rod": "Rod of Radiance",
+  "item.atomiceulogy.teleport_staff": "Staff of Teleportation",
+  "item.atomiceulogy.titanium_shovel": "Titanium Shovel",
+  "item.atomiceulogy.titanium_pickaxe": "Titanium Pickaxe",
+  "item.atomiceulogy.titanium_axe": "Titanium Axe",
+  "item.atomiceulogy.titanium_hoe": "Titanium Hoe",
+  "item.atomiceulogy.titanium_sword": "Titanium Sword",
 
   "item.atomiceulogy.metal_detector_level_1": "Basic Metal Detector",
   "item.atomiceulogy.metal_detector_level_1.tooltip_line_1": "§8Detects mediocre ores",

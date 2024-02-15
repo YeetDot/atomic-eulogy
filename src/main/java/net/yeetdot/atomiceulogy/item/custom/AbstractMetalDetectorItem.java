@@ -9,14 +9,13 @@ import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
-import net.yeetdot.atomiceulogy.util.ModTags;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
-public class MetalDetectorItemLevel1 extends Item {
+public class AbstractMetalDetectorItem extends Item {
 
-    public MetalDetectorItemLevel1(Settings settings) {
+    public AbstractMetalDetectorItem(Settings settings) {
         super(settings);
     }
 
@@ -62,7 +61,7 @@ public class MetalDetectorItemLevel1 extends Item {
         player.sendMessage(Text.literal("Found " + block.asItem().getName().getString() + " at (" + blockPos.getX() + ", " + blockPos.getY() + ", " + blockPos.getZ() + ")"), true);
     }
 
-    private boolean isValuableBlock(BlockState state) {
-        return state.isIn(ModTags.Blocks.METAL_DETECTOR_LEVEL_1_DETECTABLE_BLOCKS);
+    public boolean isValuableBlock(BlockState state) {
+        return false;
     }
 }

@@ -1,4 +1,4 @@
-// 1.20.4	2024-02-14T20:21:37.2991368	Atomic Eulogy/Model Definitions
+// 1.20.4	2024-02-15T11:35:15.4637876	Atomic Eulogy/Model Definitions
 9faba967f13c898b0ce28a310fd8f88015e31ccc assets\atomiceulogy\models\item\titanium_pickaxe.json
 5128436eff51c587ad0297a9d7c33175e5467442 assets\atomiceulogy\models\item\titanium_block.json
 a62df255b9f9da665372f58b0da44a40b822d463 assets\atomiceulogy\models\block\titanium_button.json
@@ -13,6 +13,7 @@ e0a98f70aababa0f48ea1e3fe69248ad19208383 assets\atomiceulogy\models\block\titani
 42baea400e24db5d3439771ce22086a0a31c615c assets\atomiceulogy\models\block\titanium_door_bottom_left_open.json
 7d70606c27cb3ea4bef402d10a7c3a1df0e23641 assets\atomiceulogy\blockstates\titanium_ore.json
 2a4c9d44a2b4615e2db8e1fb7a947841535950c5 assets\atomiceulogy\models\block\poisonous_block.json
+34212a76e71db3737b0103a866a39c6776bf3d3d assets\atomiceulogy\models\item\teleport_staff.json
 6ac130d7253896ad5590d2319f7deabbd3ebeeac assets\atomiceulogy\models\block\titanium_ore.json
 7835e6e1fcc153a3ec122ca0be6211be26c808db assets\atomiceulogy\models\item\radiance_rod.json
 d1040fba2fe6d61a069d39c6b984111c3f2e02e3 assets\atomiceulogy\models\item\titanium_button.json
@@ -37,8 +38,8 @@ aa7a9955ff660b192f1cbf5d9652791c3e5a6364 assets\atomiceulogy\models\block\titani
 9a67e6cd01ef2d0dec8c9957aff9cb82ad249518 assets\atomiceulogy\blockstates\titanium_button.json
 7c2a37b8562c2ec38dc2913acb169952f33f8d3d assets\atomiceulogy\models\block\deepslate_titanium_ore.json
 d7183a5e369756d819fee62979397c1e4e9267e7 assets\atomiceulogy\blockstates\titanium_door.json
-5d3c9d46f0f7ec3b39c964839518e677de19590c assets\atomiceulogy\models\block\titanium_door_top_left_open.json
 7ef890518d00eb81f5043906974ee1cc1730b400 assets\atomiceulogy\models\item\deepslate_titanium_ore.json
+5d3c9d46f0f7ec3b39c964839518e677de19590c assets\atomiceulogy\models\block\titanium_door_top_left_open.json
 ee1ef5d55b892225c2991851a6a875ba1ef0658d assets\atomiceulogy\models\block\titanium_trapdoor_top.json
 31d41cf2a80b13ac7dc16e6520977499bb7aaf75 assets\atomiceulogy\models\item\titanium_trapdoor.json
 b8e5bb61df67e7b1470e0b7e58e349bf8761140c assets\atomiceulogy\models\item\raw_titanium_block.json

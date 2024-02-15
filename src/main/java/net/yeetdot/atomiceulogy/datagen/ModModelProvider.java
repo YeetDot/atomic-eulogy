@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
+import net.minecraft.data.client.Model;
 import net.minecraft.data.client.Models;
 import net.yeetdot.atomiceulogy.block.ModBlocks;
 import net.yeetdot.atomiceulogy.item.ModItems;
@@ -35,6 +36,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.TITANIUM_NUGGET, Models.GENERATED);
         itemModelGenerator.register(ModItems.RAW_TITANIUM, Models.GENERATED);
         itemModelGenerator.register(ModItems.RADIANCE_ROD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.TELEPORT_STAFF, Models.GENERATED);
         itemModelGenerator.register(ModItems.METAL_DETECTOR_LEVEL_1, Models.GENERATED);
         itemModelGenerator.register(ModItems.TITANIUM_AXE, Models.GENERATED);
         itemModelGenerator.register(ModItems.TITANIUM_PICKAXE, Models.GENERATED);

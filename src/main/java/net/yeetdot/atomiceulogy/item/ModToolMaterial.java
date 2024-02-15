@@ -8,7 +8,7 @@ import net.minecraft.recipe.Ingredient;
 import java.util.function.Supplier;
 
 public enum ModToolMaterial implements ToolMaterial {
-    TITANIUM(4, 8, 1, 0, 255, () -> Ingredient.ofItems(ModItems.TITANIUM_INGOT));
+    TITANIUM(3, 8, 2, 0, 127, () -> Ingredient.ofItems(ModItems.TITANIUM_INGOT));
 
     private final int miningLevel;
     private final int itemDurability;
