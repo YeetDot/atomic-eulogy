@@ -12,7 +12,6 @@ import net.minecraft.util.hit.EntityHitResult;
 import net.minecraft.util.hit.HitResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
-
 public class AbstractRayTracingItem extends Item {
     public AbstractRayTracingItem(Settings settings) {
         super(settings);
@@ -25,27 +24,30 @@ public class AbstractRayTracingItem extends Item {
         float tickDelta = 0F;
         boolean includeFluids = true;
 
-        assert client.cameraEntity != null;
         HitResult hit = client.cameraEntity.raycast(maxReach, tickDelta, includeFluids);
 
+        TypedActionResult result = null;
+
         switch (hit.getType()){
+            case ENTITY:
+                EntityHitResult entityHitResult = (EntityHitResult) hit;
+                Entity entity = entityHitResult.getEntity();
+                result = TypedActionResult.success(player.getStackInHand(hand), true);
+                onHitEntity(world, player, hand, entity);
+                break;
             case MISS:
+                result = TypedActionResult.fail(player.getStackInHand(hand));
                 onMiss(world, player, hand);
                 break;
             case BLOCK:
                 BlockHitResult blockHitResult = (BlockHitResult) hit;
                 BlockPos pos = blockHitResult.getBlockPos();
+                result = TypedActionResult.success(player.getStackInHand(hand), true);
                 onHitBlock(world, player, hand, pos);
                 break;
-            case ENTITY:
-                assert hit instanceof EntityHitResult;
-                EntityHitResult entityHitResult = (EntityHitResult) hit;
-                Entity entity = entityHitResult.getEntity();
-                onHitEntity(world, player, hand, entity);
-                break;
-        }
 
-        return super.use(world, player, hand);
+        }
+        return result;
     }
 
     public void onHitEntity(World world, PlayerEntity player, Hand hand, Entity entity) {

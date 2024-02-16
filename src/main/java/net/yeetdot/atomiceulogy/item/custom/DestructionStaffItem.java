@@ -7,6 +7,7 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
+import net.minecraft.text.Text;
 import net.minecraft.util.Arm;
 import net.minecraft.util.Hand;
 import net.minecraft.util.math.BlockPos;
@@ -16,6 +17,8 @@ public class DestructionStaffItem extends AbstractRayTracingItem{
     public DestructionStaffItem(Settings settings) {
         super(settings);
     }
+
+
 
     @Override
     public void onMiss(World world, PlayerEntity player, Hand hand) {
@@ -35,9 +38,13 @@ public class DestructionStaffItem extends AbstractRayTracingItem{
     @Override
     public void onHitEntity(World world, PlayerEntity player, Hand hand, Entity entity) {
         if(!world.isClient){
-            entity.kill();
-            if(!player.getAbilities().creativeMode) player.getItemCooldownManager().set(this, 600);
-            world.playSound(entity, entity.getBlockPos(), SoundEvents.BLOCK_END_PORTAL_SPAWN, SoundCategory.PLAYERS, 5, 1);
+            player.sendMessage(Text.literal(String.valueOf(entity.getName())));
+            if (entity instanceof LivingEntity livingEntity) {
+                livingEntity.kill();
+                if(!player.getAbilities().creativeMode) player.getItemCooldownManager().set(this, 600);
+                world.playSound(entity, entity.getBlockPos(), SoundEvents.BLOCK_END_PORTAL_SPAWN, SoundCategory.PLAYERS, 5, 1);
+            }
+
         }
     }
 }

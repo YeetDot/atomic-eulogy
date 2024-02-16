@@ -2,6 +2,7 @@ package net.yeetdot.atomiceulogy.item.custom;
 
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.Hand;
 import net.minecraft.util.math.BlockPos;
@@ -22,7 +23,7 @@ public class TeleportStaffItem extends AbstractRayTracingItem {
         if(!world.isClient) {
             player.teleport(pos.getX(), pos.getY() + 1, pos.getZ());
             player.getItemCooldownManager().set(this, 20);
-            player.playSound(SoundEvents.ENTITY_PLAYER_TELEPORT, 1, 1);
+            world.playSound(player, pos, SoundEvents.ENTITY_ENDERMAN_TELEPORT, SoundCategory.PLAYERS, 1, 1);
         }
     }
 
@@ -31,7 +32,7 @@ public class TeleportStaffItem extends AbstractRayTracingItem {
         if(!world.isClient) {
             entity.teleport(player.getX(), player.getY(), player.getZ());
             player.getItemCooldownManager().set(this, 20);
-            player.playSound(SoundEvents.ENTITY_ENDERMAN_TELEPORT, 1, 1);
+            world.playSound(player, entity.getBlockPos(), SoundEvents.ENTITY_ENDERMAN_TELEPORT, SoundCategory.PLAYERS, 1, 1);
         }
     }
 }
