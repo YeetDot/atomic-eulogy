@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_top_left",
+  "textures": {
+    "bottom": "atomiceulogy:block/titanium_door_bottom",
+    "top": "atomiceulogy:block/titanium_door_top"
+  }
+}
