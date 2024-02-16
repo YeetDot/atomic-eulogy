@@ -35,7 +35,6 @@ public class AbstractRayTracingItem extends Item {
                 BlockHitResult blockHitResult = (BlockHitResult) hit;
                 BlockPos pos = blockHitResult.getBlockPos();
                 onHitBlock(world, player, hand, pos);
-
             case ENTITY:
                 assert hit instanceof EntityHitResult;
                 EntityHitResult entityHitResult = (EntityHitResult) hit;
