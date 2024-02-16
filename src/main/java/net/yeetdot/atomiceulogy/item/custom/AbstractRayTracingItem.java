@@ -31,15 +31,18 @@ public class AbstractRayTracingItem extends Item {
         switch (hit.getType()){
             case MISS:
                 onMiss(world, player, hand);
+                break;
             case BLOCK:
                 BlockHitResult blockHitResult = (BlockHitResult) hit;
                 BlockPos pos = blockHitResult.getBlockPos();
                 onHitBlock(world, player, hand, pos);
+                break;
             case ENTITY:
                 assert hit instanceof EntityHitResult;
                 EntityHitResult entityHitResult = (EntityHitResult) hit;
                 Entity entity = entityHitResult.getEntity();
                 onHitEntity(world, player, hand, entity);
+                break;
         }
 
         return super.use(world, player, hand);
