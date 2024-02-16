@@ -23,11 +23,27 @@ public class ModItemGroups {
                     entries.add(ModItems.TITANIUM_AXE);
                     entries.add(ModItems.TITANIUM_HOE);
                     entries.add(ModItems.TITANIUM_SWORD);
+                    entries.add(ModItems.ETHEREUM_SHOVEL);
+                    entries.add(ModItems.ETHEREUM_PICKAXE);
+                    entries.add(ModItems.ETHEREUM_AXE);
+                    entries.add(ModItems.ETHEREUM_HOE);
+                    entries.add(ModItems.ETHEREUM_SWORD);
+                    entries.add(ModItems.NEUTRONIUM_SHOVEL);
+                    entries.add(ModItems.NEUTRONIUM_PICKAXE);
+                    entries.add(ModItems.NEUTRONIUM_AXE);
+                    entries.add(ModItems.NEUTRONIUM_HOE);
+                    entries.add(ModItems.NEUTRONIUM_SWORD);
+                    entries.add(ModItems.TELEPORT_STAFF);
+                    entries.add(ModItems.DESTRUCTION_STAFF);
                     entries.add(ModItems.TITANIUM_INGOT);
                     entries.add(ModItems.RAW_TITANIUM);
                     entries.add(ModItems.TITANIUM_NUGGET);
+                    entries.add(ModItems.ETHEREUM_INGOT);
+                    entries.add(ModItems.RAW_ETHEREUM);
+                    entries.add(ModItems.ETHEREUM_NUGGET);
+                    entries.add(ModItems.NEUTRONIUM_INGOT);
+                    entries.add(ModItems.NEUTRONIUM_NUGGET);
                     entries.add(ModItems.RADIANCE_ROD);
-                    entries.add(ModItems.TELEPORT_STAFF);
                     entries.add(ModItems.METAL_DETECTOR_LEVEL_1);
                     //Block Items
 

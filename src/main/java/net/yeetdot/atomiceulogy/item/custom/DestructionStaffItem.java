@@ -1,9 +1,11 @@
 package net.yeetdot.atomiceulogy.item.custom;
 
 import net.minecraft.block.Block;
+import net.minecraft.client.sound.Sound;
 import net.minecraft.entity.*;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
+import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.Arm;
 import net.minecraft.util.Hand;
@@ -26,7 +28,7 @@ public class DestructionStaffItem extends AbstractRayTracingItem{
         if(!world.isClient){
             world.breakBlock(pos, true);
             if(!player.getAbilities().creativeMode) player.getItemCooldownManager().set(this, 600);
-            player.playSound(SoundEvents.ENTITY_ENDER_DRAGON_DEATH, 5, 1);
+            world.playSound(null, pos, SoundEvents.BLOCK_END_PORTAL_SPAWN, SoundCategory.PLAYERS, 5, 1);
         }
     }
 
@@ -35,7 +37,7 @@ public class DestructionStaffItem extends AbstractRayTracingItem{
         if(!world.isClient){
             entity.kill();
             if(!player.getAbilities().creativeMode) player.getItemCooldownManager().set(this, 600);
-            player.playSound(SoundEvents.ENTITY_ENDER_DRAGON_DEATH, 5, 1);
+            world.playSound(entity, entity.getBlockPos(), SoundEvents.BLOCK_END_PORTAL_SPAWN, SoundCategory.PLAYERS, 5, 1);
         }
     }
 }

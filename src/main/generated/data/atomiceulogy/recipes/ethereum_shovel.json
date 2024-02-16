@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "/": {
+      "item": "minecraft:stick"
+    },
+    "T": {
+      "item": "atomiceulogy:ethereum_shovel"
+    }
+  },
+  "pattern": [
+    "T",
+    "/",
+    "/"
+  ],
+  "result": {
+    "item": "atomiceulogy:ethereum_shovel"
+  }
+}

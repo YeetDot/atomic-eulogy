@@ -35,13 +35,29 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.TITANIUM_INGOT, Models.GENERATED);
         itemModelGenerator.register(ModItems.TITANIUM_NUGGET, Models.GENERATED);
         itemModelGenerator.register(ModItems.RAW_TITANIUM, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ETHEREUM_INGOT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ETHEREUM_NUGGET, Models.GENERATED);
+        itemModelGenerator.register(ModItems.RAW_ETHEREUM, Models.GENERATED);
+        itemModelGenerator.register(ModItems.NEUTRONIUM_INGOT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.NEUTRONIUM_NUGGET, Models.GENERATED);
         itemModelGenerator.register(ModItems.RADIANCE_ROD, Models.GENERATED);
         itemModelGenerator.register(ModItems.TELEPORT_STAFF, Models.GENERATED);
+        itemModelGenerator.register(ModItems.DESTRUCTION_STAFF, Models.GENERATED);
         itemModelGenerator.register(ModItems.METAL_DETECTOR_LEVEL_1, Models.GENERATED);
         itemModelGenerator.register(ModItems.TITANIUM_AXE, Models.GENERATED);
         itemModelGenerator.register(ModItems.TITANIUM_PICKAXE, Models.GENERATED);
         itemModelGenerator.register(ModItems.TITANIUM_HOE, Models.GENERATED);
         itemModelGenerator.register(ModItems.TITANIUM_SHOVEL, Models.GENERATED);
         itemModelGenerator.register(ModItems.TITANIUM_SWORD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ETHEREUM_AXE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ETHEREUM_PICKAXE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ETHEREUM_HOE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ETHEREUM_SHOVEL, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ETHEREUM_SWORD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.NEUTRONIUM_AXE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.NEUTRONIUM_PICKAXE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.NEUTRONIUM_HOE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.NEUTRONIUM_SHOVEL, Models.GENERATED);
+        itemModelGenerator.register(ModItems.NEUTRONIUM_SWORD, Models.GENERATED);
     }
 }

@@ -125,6 +125,68 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.TITANIUM_INGOT), conditionsFromItem(ModItems.TITANIUM_INGOT))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.TITANIUM_SWORD)));
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.ETHEREUM_PICKAXE, 1)
+                .pattern("TTT")
+                .pattern(" / ")
+                .pattern(" / ")
+                .input('T', ModItems.ETHEREUM_INGOT)
+                .input('/', Items.STICK)
+                .criterion(hasItem(ModItems.ETHEREUM_INGOT), conditionsFromItem(ModItems.ETHEREUM_INGOT))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.ETHEREUM_PICKAXE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.ETHEREUM_SHOVEL, 1)
+                .pattern("T")
+                .pattern("/")
+                .pattern("/")
+                .input('T', ModItems.ETHEREUM_SHOVEL)
+                .input('/', Items.STICK)
+                .criterion(hasItem(ModItems.ETHEREUM_INGOT), conditionsFromItem(ModItems.ETHEREUM_INGOT))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.ETHEREUM_SHOVEL)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.ETHEREUM_HOE, 1)
+                .pattern("TT")
+                .pattern(" /")
+                .pattern(" /")
+                .input('T', ModItems.ETHEREUM_HOE)
+                .input('/', Items.STICK)
+                .criterion(hasItem(ModItems.ETHEREUM_INGOT), conditionsFromItem(ModItems.ETHEREUM_INGOT))
+                .offerTo(exporter, new Identifier("ethereum_hoe_left"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.ETHEREUM_HOE, 1)
+                .pattern("TT")
+                .pattern("/ ")
+                .pattern("/ ")
+                .input('T', ModItems.ETHEREUM_INGOT)
+                .input('/', Items.STICK)
+                .criterion(hasItem(ModItems.ETHEREUM_INGOT), conditionsFromItem(ModItems.ETHEREUM_INGOT))
+                .offerTo(exporter, new Identifier("ethereum_hoe_right"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.ETHEREUM_AXE, 1)
+                .pattern("TT")
+                .pattern("T/")
+                .pattern(" /")
+                .input('T', ModItems.ETHEREUM_INGOT)
+                .input('/', Items.STICK)
+                .criterion(hasItem(ModItems.ETHEREUM_INGOT), conditionsFromItem(ModItems.ETHEREUM_INGOT))
+                .offerTo(exporter, new Identifier("ethereum_axe_left"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.ETHEREUM_AXE, 1)
+                .pattern("TT")
+                .pattern("/T")
+                .pattern("/ ")
+                .input('T', ModItems.ETHEREUM_INGOT)
+                .input('/', Items.STICK)
+                .criterion(hasItem(ModItems.ETHEREUM_INGOT), conditionsFromItem(ModItems.ETHEREUM_INGOT))
+                .offerTo(exporter, new Identifier("ethereum_axe_right"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.ETHEREUM_SWORD, 1)
+                .pattern("T")
+                .pattern("T")
+                .pattern("/")
+                .input('T', ModItems.ETHEREUM_INGOT)
+                .input('/', Items.STICK)
+                .criterion(hasItem(ModItems.ETHEREUM_INGOT), conditionsFromItem(ModItems.ETHEREUM_INGOT))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.ETHEREUM_SWORD)));
 
     }
 

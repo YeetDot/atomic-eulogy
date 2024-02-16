@@ -22,7 +22,7 @@ public class AbstractRayTracingItem extends Item {
     public TypedActionResult<ItemStack> use(World world, PlayerEntity player, Hand hand) {
         MinecraftClient client = MinecraftClient.getInstance();
         double maxReach = 1000;
-        float tickDelta = 1.0F;
+        float tickDelta = 0F;
         boolean includeFluids = true;
 
         assert client.cameraEntity != null;
