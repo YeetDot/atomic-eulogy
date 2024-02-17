@@ -19,8 +19,7 @@ public class PoisonousBlock extends Block {
     @Override
     public void onSteppedOn(World world, BlockPos pos, BlockState state, Entity entity) {
         if (!world.isClient && world.getDifficulty() != Difficulty.PEACEFUL) {
-            if (entity instanceof LivingEntity) {
-                LivingEntity livingEntity = (LivingEntity)entity;
+            if (entity instanceof LivingEntity livingEntity) {
                 if (!livingEntity.isInvulnerableTo(world.getDamageSources().wither())) {
                     livingEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.POISON, 60));
                 }

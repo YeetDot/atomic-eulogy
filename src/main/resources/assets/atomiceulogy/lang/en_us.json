@@ -11,7 +11,11 @@
   "item.atomiceulogy.titanium_sword": "Titanium Sword",
 
   "item.atomiceulogy.metal_detector_level_1": "Basic Metal Detector",
-  "item.atomiceulogy.metal_detector_level_1.tooltip_line_1": "§8Detects mediocre ores",
+  "item.atomiceulogy.metal_detector_level_2": "Expensive Metal Detector",
+  "item.atomiceulogy.metal_detector_level_3": "Industrial Metal Detector",
+  "item.atomiceulogy.metal_detector_level_1.tooltip": "§8Detects mediocre ores",
+  "item.atomiceulogy.metal_detector_level_2.tooltip": "§8Detects quality ores",
+  "item.atomiceulogy.metal_detector_level_3.tooltip": "§8Detects superlative ores",
   "item.atomiceulogy.titanium_nugget.tooltip": "§8Contains 501kg of titanium. Lethal if ingested.",
 
   "block.atomiceulogy.titanium_block": "Block of Titanium",

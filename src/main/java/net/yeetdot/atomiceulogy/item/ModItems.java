@@ -9,10 +9,8 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
 import net.yeetdot.atomiceulogy.AtomicEulogy;
-import net.yeetdot.atomiceulogy.item.custom.DestructionStaffItem;
-import net.yeetdot.atomiceulogy.item.custom.MetalDetectorItemLevelOne;
-import net.yeetdot.atomiceulogy.item.custom.TeleportStaffItem;
-import net.yeetdot.atomiceulogy.item.custom.TitaniumNuggetItem;
+import net.yeetdot.atomiceulogy.item.custom.*;
+import net.yeetdot.atomiceulogy.item.custom.metaldetector.*;
 
 public class ModItems {
     public static final Item TITANIUM_INGOT = registerItem("titanium_ingot", new Item(new FabricItemSettings()));
@@ -20,7 +18,9 @@ public class ModItems {
     public static final Item TITANIUM_NUGGET = registerItem("titanium_nugget", new TitaniumNuggetItem(new FabricItemSettings().food(ModFoodComponents.TITANIUM_NUGGET)));
     public static final Item RADIANCE_ROD = registerItem("radiance_rod", new Item(new FabricItemSettings().maxCount(1).rarity(Rarity.EPIC)));
 
-    public static final Item METAL_DETECTOR_LEVEL_1 = registerItem("metal_detector_level_1", new MetalDetectorItemLevelOne(new FabricItemSettings().maxDamage(16384)));
+    public static final Item METAL_DETECTOR_LEVEL_1 = registerItem("metal_detector_level_1", new MetalDetectorLevelOneItem(new FabricItemSettings().maxDamage(16384)));
+    public static final Item METAL_DETECTOR_LEVEL_2 = registerItem("metal_detector_level_2", new MetalDetectorLevelTwoItem(new FabricItemSettings().maxDamage(16384)));
+    public static final Item METAL_DETECTOR_LEVEL_3 = registerItem("metal_detector_level_3", new MetalDetectorLevelThreeItem(new FabricItemSettings().maxDamage(16384)));
     public static final Item TELEPORT_STAFF = registerItem("teleport_staff", new TeleportStaffItem(new FabricItemSettings().maxCount(1).rarity(Rarity.EPIC)));
     public static final Item DESTRUCTION_STAFF = registerItem("destruction_staff", new DestructionStaffItem(new FabricItemSettings().maxCount(1).rarity(Rarity.EPIC)));
 

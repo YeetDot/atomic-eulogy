@@ -2,7 +2,7 @@ package net.yeetdot.atomiceulogy.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
-import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.BlockTags;
 import net.yeetdot.atomiceulogy.block.ModBlocks;
@@ -20,7 +20,23 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(ModTags.Blocks.METAL_DETECTOR_LEVEL_1_DETECTABLE_BLOCKS)
                 .forceAddTag(BlockTags.COAL_ORES)
                 .forceAddTag(BlockTags.IRON_ORES)
-                .forceAddTag(BlockTags.COPPER_ORES);
+                .forceAddTag(BlockTags.COPPER_ORES)
+                .add(Blocks.NETHER_QUARTZ_ORE);
+
+        getOrCreateTagBuilder(ModTags.Blocks.TITANIUM_ORES)
+                .add(ModBlocks.TITANIUM_ORE)
+                .add(ModBlocks.DEEPSLATE_TITANIUM_ORE);
+
+        getOrCreateTagBuilder(ModTags.Blocks.METAL_DETECTOR_LEVEL_2_DETECTABLE_BLOCKS)
+                .forceAddTag(BlockTags.REDSTONE_ORES)
+                .forceAddTag(BlockTags.GOLD_ORES)
+                .forceAddTag(BlockTags.LAPIS_ORES)
+                .forceAddTag(BlockTags.EMERALD_ORES)
+                .forceAddTag(ModTags.Blocks.TITANIUM_ORES);
+
+        getOrCreateTagBuilder(ModTags.Blocks.METAL_DETECTOR_LEVEL_3_DETECTABLE_BLOCKS)
+                .forceAddTag(BlockTags.DIAMOND_ORES)
+                .add(Blocks.ANCIENT_DEBRIS);
 
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
                 .add(ModBlocks.TITANIUM_BLOCK)

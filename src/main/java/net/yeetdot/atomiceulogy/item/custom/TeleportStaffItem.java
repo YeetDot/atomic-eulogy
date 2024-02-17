@@ -8,14 +8,13 @@ import net.minecraft.util.Hand;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
-public class TeleportStaffItem extends AbstractRayTracingItem {
+public class TeleportStaffItem extends RayTracingItem {
     public TeleportStaffItem(Settings settings) {
         super(settings);
     }
 
     @Override
     public void onMiss(World world, PlayerEntity player, Hand hand) {
-        super.onMiss(world, player, hand);
     }
 
     @Override

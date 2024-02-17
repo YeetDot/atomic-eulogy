@@ -37,8 +37,7 @@ public class TitaniumNuggetItem extends Item {
     public ItemStack finishUsing(ItemStack stack, World world, LivingEntity user) {
         ItemStack itemStack = super.finishUsing(stack, world, user);
         if (!world.isClient){
-            if (user instanceof PlayerEntity){
-                PlayerEntity player = (PlayerEntity) user;
+            if (user instanceof PlayerEntity player){
                 if (!player.getAbilities().creativeMode){
                     player.damage(ModDamageTypes.of(world, ModDamageTypes.ATE_TITANIUM_DAMAGE_TYPE), Float.MAX_VALUE);
                 }

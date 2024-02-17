@@ -1,9 +1,9 @@
-// 1.20.4	2024-02-15T20:34:52.6160414	Atomic Eulogy/Block Loot Tables
-ae1f984fafedca8450091d75b473d168e8fc4039 data\atomiceulogy\loot_tables\blocks\titanium_button.json
-010bf3b7294527170a47f23b633726937cb01195 data\atomiceulogy\loot_tables\blocks\raw_titanium_block.json
-50f3586705cd36879b483b17a5ca0b69654ffa31 data\atomiceulogy\loot_tables\blocks\titanium_block.json
-46d86089de52eec1e8312d702ce96c53a6dd442f data\atomiceulogy\loot_tables\blocks\titanium_door.json
+// 1.20.4	2024-02-16T23:20:48.7100679	Atomic Eulogy/Block Loot Tables
 62f69a6b57a5382436dbe5cc077690db8e2e054f data\atomiceulogy\loot_tables\blocks\titanium_trapdoor.json
-835a00144acc6d874fa3520fd5323e18b0171a22 data\atomiceulogy\loot_tables\blocks\poisonous_block.json
-87b856f154c828833ff619a1e021847079efb55c data\atomiceulogy\loot_tables\blocks\deepslate_titanium_ore.json
+010bf3b7294527170a47f23b633726937cb01195 data\atomiceulogy\loot_tables\blocks\raw_titanium_block.json
+ae1f984fafedca8450091d75b473d168e8fc4039 data\atomiceulogy\loot_tables\blocks\titanium_button.json
 af75fbf8b7d64a54bff36882b647e92cb5fa4f24 data\atomiceulogy\loot_tables\blocks\titanium_ore.json
+46d86089de52eec1e8312d702ce96c53a6dd442f data\atomiceulogy\loot_tables\blocks\titanium_door.json
+87b856f154c828833ff619a1e021847079efb55c data\atomiceulogy\loot_tables\blocks\deepslate_titanium_ore.json
+835a00144acc6d874fa3520fd5323e18b0171a22 data\atomiceulogy\loot_tables\blocks\poisonous_block.json
+50f3586705cd36879b483b17a5ca0b69654ffa31 data\atomiceulogy\loot_tables\blocks\titanium_block.json

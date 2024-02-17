@@ -1,8 +1,12 @@
 package net.yeetdot.atomiceulogy.item.custom;
 
+import net.minecraft.block.ShapeContext;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.entity.Entity;
+import net.minecraft.entity.EntityType;
+import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.fluid.FluidState;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Hand;
@@ -11,9 +15,11 @@ import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.hit.EntityHitResult;
 import net.minecraft.util.hit.HitResult;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.shape.VoxelShape;
+import net.minecraft.world.RaycastContext;
 import net.minecraft.world.World;
-public class AbstractRayTracingItem extends Item {
-    public AbstractRayTracingItem(Settings settings) {
+public abstract class RayTracingItem extends Item {
+    public RayTracingItem(Settings settings) {
         super(settings);
     }
 
@@ -21,11 +27,10 @@ public class AbstractRayTracingItem extends Item {
     public TypedActionResult<ItemStack> use(World world, PlayerEntity player, Hand hand) {
         MinecraftClient client = MinecraftClient.getInstance();
         double maxReach = 1000;
-        float tickDelta = 0F;
+        float tickDelta = 1F;
         boolean includeFluids = true;
 
         HitResult hit = client.cameraEntity.raycast(maxReach, tickDelta, includeFluids);
-
         TypedActionResult result = null;
 
         switch (hit.getType()){
@@ -46,16 +51,14 @@ public class AbstractRayTracingItem extends Item {
                 onHitBlock(world, player, hand, pos);
                 break;
 
+
         }
         return result;
     }
 
-    public void onHitEntity(World world, PlayerEntity player, Hand hand, Entity entity) {
-    }
+    public abstract void onHitEntity(World world, PlayerEntity player, Hand hand, Entity entity);
 
-    public void onHitBlock(World world, PlayerEntity player, Hand hand, BlockPos pos) {
-    }
+    public abstract void onHitBlock(World world, PlayerEntity player, Hand hand, BlockPos pos);
 
-    public void onMiss(World world, PlayerEntity player, Hand hand) {
-    }
+    public abstract void onMiss(World world, PlayerEntity player, Hand hand);
 }

@@ -1,19 +1,15 @@
 package net.yeetdot.atomiceulogy.item.custom;
 
-import net.minecraft.block.Block;
-import net.minecraft.client.sound.Sound;
 import net.minecraft.entity.*;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.item.ItemStack;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.text.Text;
-import net.minecraft.util.Arm;
 import net.minecraft.util.Hand;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
-public class DestructionStaffItem extends AbstractRayTracingItem{
+public class DestructionStaffItem extends RayTracingItem {
     public DestructionStaffItem(Settings settings) {
         super(settings);
     }
@@ -23,7 +19,6 @@ public class DestructionStaffItem extends AbstractRayTracingItem{
     @Override
     public void onMiss(World world, PlayerEntity player, Hand hand) {
 
-        super.onMiss(world, player, hand);
     }
 
     @Override

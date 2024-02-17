@@ -45,6 +45,8 @@ public class ModItemGroups {
                     entries.add(ModItems.NEUTRONIUM_NUGGET);
                     entries.add(ModItems.RADIANCE_ROD);
                     entries.add(ModItems.METAL_DETECTOR_LEVEL_1);
+                    entries.add(ModItems.METAL_DETECTOR_LEVEL_2);
+                    entries.add(ModItems.METAL_DETECTOR_LEVEL_3);
                     //Block Items
 
                     entries.add(ModBlocks.TITANIUM_BLOCK);

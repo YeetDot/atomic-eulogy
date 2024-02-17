@@ -10,10 +10,15 @@ import net.yeetdot.atomiceulogy.AtomicEulogy;
 public class ModTags {
     public static class Blocks {
         public static final TagKey<Block> METAL_DETECTOR_LEVEL_1_DETECTABLE_BLOCKS = createTag("metal_detector_level_1_detectable_blocks");
+        public static final TagKey<Block> METAL_DETECTOR_LEVEL_2_DETECTABLE_BLOCKS = createTag("metal_detector_level_2_detectable_blocks");
+        public static final TagKey<Block> METAL_DETECTOR_LEVEL_3_DETECTABLE_BLOCKS = createTag("metal_detector_level_3_detectable_blocks");
+        public static final TagKey<Block> TITANIUM_ORES = createTag("titanium_ores");
 
         private static TagKey<Block> createTag(String name) {
             return TagKey.of(RegistryKeys.BLOCK, new Identifier(AtomicEulogy.MOD_ID, name));
         }
+
+
     }
 
     public static class Items {
