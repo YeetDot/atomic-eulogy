@@ -41,7 +41,7 @@ public class ModItems {
     public static final Item ETHEREUM_SHOVEL = registerItem("ethereum_shovel", new ShovelItem(ModToolMaterial.ETHEREUM, 1.5f, -3, new Item.Settings()));
     public static final Item ETHEREUM_AXE = registerItem("ethereum_axe", new AxeItem(ModToolMaterial.ETHEREUM, 6, -2.8f, new Item.Settings()));
     public static final Item ETHEREUM_HOE = registerItem("ethereum_hoe", new HoeItem(ModToolMaterial.ETHEREUM, 0, -1, new Item.Settings()));
-    public static final Item ETHEREUM_SWORD = registerItem("ethereum_sword", new SwordItem(ModToolMaterial.ETHEREUM, 3, -2.4f, new Item.Settings()));
+    public static final Item ETHEREUM_SWORD = registerItem("ethereum_sword", new EthereumSwordItem(ModToolMaterial.ETHEREUM, 3, -2.4f, new Item.Settings()));
 
     public static final Item NEUTRONIUM_PICKAXE = registerItem("neutronium_pickaxe", new PickaxeItem(ModToolMaterial.NEUTRONIUM, 1, -2.8f, new Item.Settings()));
     public static final Item NEUTRONIUM_SHOVEL = registerItem("neutronium_shovel", new ShovelItem(ModToolMaterial.NEUTRONIUM, 1.5f, -3, new Item.Settings()));

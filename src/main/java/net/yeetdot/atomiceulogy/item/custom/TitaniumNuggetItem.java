@@ -9,6 +9,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.text.Text;
+import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
 import net.minecraft.util.TypedActionResult;
 import net.minecraft.world.World;
@@ -49,8 +50,10 @@ public class TitaniumNuggetItem extends Item {
     }
 
     @Override
-    public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
-        target.addStatusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, 40, 255, true, false, false ), attacker);
-        return super.postHit(stack, target, attacker);
+    public ActionResult useOnEntity(ItemStack stack, PlayerEntity user, LivingEntity entity, Hand hand) {
+        if(entity.getHealth() <= 30){
+            entity.kill();
+        }
+        return super.useOnEntity(stack, user, entity, hand);
     }
 }
