@@ -41,7 +41,7 @@ public abstract class RayTracingItem extends Item {
                 onHitEntity(world, player, hand, entity);
                 break;
             case MISS:
-                result = TypedActionResult.fail(player.getStackInHand(hand));
+                result = TypedActionResult.pass(player.getStackInHand(hand));
                 onMiss(world, player, hand);
                 break;
             case BLOCK:

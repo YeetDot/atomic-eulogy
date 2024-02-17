@@ -2,6 +2,8 @@ package net.yeetdot.atomiceulogy.item.custom;
 
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.effect.StatusEffectInstance;
+import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -43,7 +45,12 @@ public class TitaniumNuggetItem extends Item {
                 }
             }
         }
-
         return itemStack;
+    }
+
+    @Override
+    public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
+        target.addStatusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, 40, 255, true, false, false ), attacker);
+        return super.postHit(stack, target, attacker);
     }
 }
