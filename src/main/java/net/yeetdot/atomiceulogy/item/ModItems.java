@@ -23,6 +23,7 @@ public class ModItems {
     public static final Item METAL_DETECTOR_LEVEL_3 = registerItem("metal_detector_level_3", new MetalDetectorLevelThreeItem(new FabricItemSettings().maxDamage(16384)));
     public static final Item TELEPORT_STAFF = registerItem("teleport_staff", new TeleportStaffItem(new FabricItemSettings().maxCount(1).rarity(Rarity.EPIC)));
     public static final Item DESTRUCTION_STAFF = registerItem("destruction_staff", new DestructionStaffItem(new FabricItemSettings().maxCount(1).rarity(Rarity.EPIC)));
+    public static final Item SNIPER = registerItem("sniper", new SniperItem(new FabricItemSettings().maxCount(1).rarity(Rarity.EPIC)));
 
     public static final Item ETHEREUM_INGOT = registerItem("ethereum_ingot", new Item(new FabricItemSettings()));
     public static final Item RAW_ETHEREUM = registerItem("raw_ethereum", new Item(new FabricItemSettings()));

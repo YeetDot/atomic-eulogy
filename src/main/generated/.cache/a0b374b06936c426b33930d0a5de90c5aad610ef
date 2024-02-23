@@ -1,11 +1,11 @@
-// 1.20.4	2024-02-16T23:20:48.7090684	Atomic Eulogy/Tags for minecraft:block
+// 1.20.4	2024-02-23T10:56:34.0489833	Atomic Eulogy/Tags for minecraft:block
+0e085b1e9c4ff2ef7cb82eaa9adaf257f82f68c0 data\atomiceulogy\tags\blocks\metal_detector_level_2_detectable_blocks.json
+7809c4030bbd89dc79b63d0da1e69c01e87b5c1f data\minecraft\tags\blocks\mineable\shovel.json
+ed12497d7a6764041a0b43e12fa38bfdd8b5e680 data\atomiceulogy\tags\blocks\titanium_ores.json
 0e5b617ec1b08dd1a4c0855e9af2e82c6f706167 data\minecraft\tags\blocks\doors.json
+f0370852079cbd30db00811773641cadfba181de data\minecraft\tags\blocks\needs_iron_tool.json
+658cac8751ea409258e3a7b91c38b1768b4577c8 data\atomiceulogy\tags\blocks\metal_detector_level_1_detectable_blocks.json
 7301e481132c63e796bb3748b71912bb79f067bf data\minecraft\tags\blocks\buttons.json
 a96d7f2368ccb4548773d98d0f3c65061bf48cb5 data\atomiceulogy\tags\blocks\metal_detector_level_3_detectable_blocks.json
-ed12497d7a6764041a0b43e12fa38bfdd8b5e680 data\atomiceulogy\tags\blocks\titanium_ores.json
-7809c4030bbd89dc79b63d0da1e69c01e87b5c1f data\minecraft\tags\blocks\mineable\shovel.json
-0e085b1e9c4ff2ef7cb82eaa9adaf257f82f68c0 data\atomiceulogy\tags\blocks\metal_detector_level_2_detectable_blocks.json
-f0370852079cbd30db00811773641cadfba181de data\minecraft\tags\blocks\needs_iron_tool.json
-2359ff8fa4f4ca37f290afcfb7cff6de8a609973 data\minecraft\tags\blocks\trapdoors.json
 f0370852079cbd30db00811773641cadfba181de data\minecraft\tags\blocks\mineable\pickaxe.json
-658cac8751ea409258e3a7b91c38b1768b4577c8 data\atomiceulogy\tags\blocks\metal_detector_level_1_detectable_blocks.json
+2359ff8fa4f4ca37f290afcfb7cff6de8a609973 data\minecraft\tags\blocks\trapdoors.json

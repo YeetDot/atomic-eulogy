@@ -35,6 +35,7 @@ public class ModItemGroups {
                     entries.add(ModItems.NEUTRONIUM_SWORD);
                     entries.add(ModItems.TELEPORT_STAFF);
                     entries.add(ModItems.DESTRUCTION_STAFF);
+                    entries.add(ModItems.SNIPER);
                     entries.add(ModItems.TITANIUM_INGOT);
                     entries.add(ModItems.RAW_TITANIUM);
                     entries.add(ModItems.TITANIUM_NUGGET);

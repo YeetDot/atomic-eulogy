@@ -43,6 +43,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.RADIANCE_ROD, Models.GENERATED);
         itemModelGenerator.register(ModItems.TELEPORT_STAFF, Models.GENERATED);
         itemModelGenerator.register(ModItems.DESTRUCTION_STAFF, Models.GENERATED);
+        itemModelGenerator.register(ModItems.SNIPER, Models.GENERATED);
         itemModelGenerator.register(ModItems.METAL_DETECTOR_LEVEL_1, Models.GENERATED);
         itemModelGenerator.register(ModItems.METAL_DETECTOR_LEVEL_2, Models.GENERATED);
         itemModelGenerator.register(ModItems.METAL_DETECTOR_LEVEL_3, Models.GENERATED);
